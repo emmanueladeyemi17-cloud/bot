@@ -20,7 +20,7 @@ bot(
       return await message.send(match.replace('#lastseen', now))
     }
     if (match === 'off') {
-      await message.send('Your not afk anymore.', { quoted: message.data }, 'text', ctx.p)
+      await message.send('You're not afk anymore.', { quoted: message.data }, 'text', ctx.p)
       setAfk(false, '', 0, '', message.id)
     }
   }
