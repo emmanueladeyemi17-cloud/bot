@@ -1,5 +1,5 @@
 # syntax = docker/dockerfile:1
-
+RUN npm install -g pm2
 # Adjust NODE_VERSION as desired
 ARG NODE_VERSION=20.18.0
 FROM node:${NODE_VERSION}-slim AS base
